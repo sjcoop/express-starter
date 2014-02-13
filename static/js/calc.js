@@ -41,13 +41,24 @@ $(function() {
 
   // WRITE CODE HERE for buttons 5-9
 
-  $('#add').click(function() {
+  $('five').click(function(5) {
     if (notLastOp()) {
-      var outputText = $('#output').text() + '+';
-      $('#output').text(outputText);
+      var outputText = $('5').text(5) + '+';
+      $('5').text(5);
     }
   });
-
+$('six').click(function(6) {
+    if (notLastOp()) {
+      var outputText = $('6').text(6) + '+';
+      $('6').text(6);
+    }
+  });
+$('seven').click(function(7) {
+    if (notLastOp()) {
+      var outputText = $('7').text(7) + '+';
+      $('7').text(7);
+    }
+  });
   // WRITE CODE HERE for sub,mul,div,mod
 
   $('#sqrt').click(function() {
