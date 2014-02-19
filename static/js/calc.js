@@ -25,39 +25,49 @@ $(function() {
     if (outputText === '02') {
       outputText = '2';
     }
-    // FIXME
-    $('#output').text('haha');
+    $('#output').text(outputText);
   });
 
   $('#three').click(function() {
     var outputText = $('#output').text() + '3';
-    // FIXME
+    if (outputText === '03') {
+      outputText = '3';
+    }
     $('#output').text(outputText);
   });
 
   $('#four').click(function() {
-    // FIXME
+    var outputText = $('#output').text() + '4';
+    if (outputText === '04') {
+      outputText = '4';
+    }
+    $('#output').text(outputText);
   });
 
   // WRITE CODE HERE for buttons 5-9
 
-  $('five').click(function(5) {
-    if (notLastOp()) {
-      var outputText = $('5').text(5) + '+';
-      $('5').text(5);
+  $('#five').click(function() {
+    var outputText = $('#output').text() + '5';
+    if (outputText === '05') {
+      outputText = '5';
     }
+    $('#output').text(outputText);
   });
-$('six').click(function(6) {
-    if (notLastOp()) {
-      var outputText = $('6').text(6) + '+';
-      $('6').text(6);
+
+$('#six').click(function() {
+    var outputText = $('#output').text() + '6';
+    if (outputText === '06') {
+      outputText = '6';
     }
+    $('#output').text(outputText);
   });
-$('seven').click(function(7) {
-    if (notLastOp()) {
-      var outputText = $('7').text(7) + '+';
-      $('7').text(7);
+
+$('#seven').click(function() {
+    var outputText = $('#output').text() + '7';
+    if (outputText === '07') {
+      outputText = '7';
     }
+    $('#output').text(outputText);
   });
   // WRITE CODE HERE for sub,mul,div,mod
 
@@ -72,7 +82,7 @@ $('seven').click(function(7) {
     var outputText = $('#output').text();
     var outputNum = parseFloat(eval(outputText));
     // FIXME
-    var newNum = Math.sqrt(outputNum);
+    var newNum = Math.sqrt(outputNum*Num);
     $('#output').text(newNum);
   });
 
