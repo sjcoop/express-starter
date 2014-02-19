@@ -69,6 +69,23 @@ $('#seven').click(function() {
     }
     $('#output').text(outputText);
   });
+
+$('#eight').click(function() {
+    var outputText = $('#output').text() + '8';
+    if (outputText === '08') {
+      outputText = '8';
+    }
+    $('#output').text(outputText);
+  });
+
+$('#nine').click(function() {
+    var outputText = $('#output').text() + '9';
+    if (outputText === '09') {
+      outputText = '9';
+    }
+    $('#output').text(outputText);
+  });
+
   // WRITE CODE HERE for sub,mul,div,mod
 
   $('#sqrt').click(function() {
